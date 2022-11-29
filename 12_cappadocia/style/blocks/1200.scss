@@ -1,0 +1,131 @@
+@media (max-width:1200px) {
+    .container {
+        width: 735px;
+    }
+    .header_container {
+        min-height: 725px;
+    }
+    .header_top {
+        padding-top: 42px;
+        padding-bottom: 102px;
+    }
+    .header_cap {
+        text-align: center;
+        font-family: $family_balqis;
+        font-weight: $main_weight_400;
+        font-size: $main_size_170;
+        line-height: $main_height_200;
+    }
+    .header_cap_sec {
+        font-family: $family_condensed_light_italic;
+        font-style: italic;
+        font-size: $main_size_41;
+        font-weight: $main_weight_500;
+        position: absolute;
+        top: 350px;
+        right: 19px;
+    }
+
+    .about_container {
+        padding-top: 40px;
+    }
+    .about_cap_sec {
+        top: 140px;
+    }
+    .about_slider {
+        margin-right: 25px;
+    }
+    .about_des_text {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+
+    .trip_container {
+        padding-top: 40px;
+    }
+    .trip_wrapper {
+        right: 200px;
+    }
+
+    .hotel_container {
+        padding-top: 40px;
+    }
+    .hotel_cap {
+        margin-bottom: 65px;
+    }
+    .hotel_cap_sec {
+        top: 135px;
+    }
+    .hotel_main {
+        position: relative;
+        margin-bottom: 267px;
+    }
+    .hotel_main_pic {
+        width: 367px;
+        height: 513px;
+    }
+    .hotel_des_col_2 {
+        position: absolute;
+        width: 735px;
+        left: 0;
+        bottom: -260px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .price_container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: url(../pictures/prise_lg.svg) no-repeat top 463px right 0;
+    }
+    .price_cap {
+        margin-bottom: 65px;
+    }
+    .price_cap_sec {
+        top: 135px;
+    }
+    .price_terms {
+        background: url(../pictures/prise_md.svg) no-repeat top 230px right 256px;
+    }
+    .price_inc {
+        width: 50%;
+        margin-right: 30px;
+    }
+    .price_not_inc {
+        width: 50%;
+    }
+    .price_request_date {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    .price_request_date_des {
+        top: 65px;
+        left: 130px;
+    }
+    .price_request_pricing {
+        margin-bottom: 50px;
+    }
+    .price_request_pricing_des {
+        top: 175px;
+        left: 190px;
+    }
+    .price_request_form_cap {
+        font-size: 22px;
+    }
+    .price_request_form_name,
+    .price_request_form_phone {
+        width: 340px;
+    }
+    .price_request_pic {
+        height: 490px;
+    }
+
+    .footer_contacts {
+        min-width: 356px;
+    }
+    .footer_text {
+        margin-left: 68px;
+        margin-top: 63px;
+    }
+}

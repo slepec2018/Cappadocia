@@ -1,0 +1,47 @@
+$family_balqis: "Balqis", sans-serif;
+$family_condensed_light: "Roboto Condensed-Light", sans-serif;
+$family_condensed_light_italic: "Roboto Condensed-LightItalic", sans-serif;
+$family_condensed_regular: "Roboto Condensed", sans-serif;
+
+$main_weight_300: 300;
+$main_weight_400: 400;
+$main_weight_500: 500;
+$main_weight_600: 600;
+
+$main_size_18: 18px;
+$main_size_24: 24px;
+$main_size_35: 35px;
+$main_size_41: 41px;
+$main_size_60: 60px;
+$main_size_87: 87px;
+$main_size_96: 96px;
+$main_size_170: 170px;
+$main_size_250: 250px;
+
+$main_height_21: 21px;
+$main_height_28: 28px;
+$main_height_114: 114px;
+$main_height_128: 128px;
+$main_height_150: 150px;
+$main_height_200: 200px;
+$main_height_334: 334px;
+
+$main_color_black: #000000;
+$main_color_white: #ffffff;
+$main_color_cap: #E2AB3F;
+$main_color_grey: gray;
+
+@mixin main_cap() {
+    font-family: $family_balqis;
+    font-size: $main_size_96;
+    font-weight: $main_weight_400;
+    line-height: $main_height_128;
+    color: $main_color_cap;
+}
+@mixin main_cap_sec() {
+    font-family: $family_condensed_light_italic;
+    font-weight: $main_weight_300;
+    font-size: $main_size_24;
+    line-height: $main_height_28;
+    position: absolute;
+}

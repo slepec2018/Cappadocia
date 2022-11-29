@@ -1,0 +1,494 @@
+@import "blocks/library.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: $family_condensed_light;
+    font-weight: $main_weight_300;
+    font-size: $main_size_18;
+    line-height: $main_height_21;
+    color: $main_color_black;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.slider__control {
+    background: none;
+    transition: background 0.3s;
+}
+.slider__control::before {
+    width: 70px;
+    height: 70px;
+}
+.slider__control[data-slide="prev"]::before {
+    background-image: url("../pictures/slider_prev.svg");
+  }
+  
+  .slider__control[data-slide="next"]::before {
+    background-image: url("../pictures/slider_next.svg");
+  }
+
+.header {
+    background: url(../pictures/header_back.jpg) no-repeat center;
+    background-size: cover;
+}
+.header_container {
+    min-height: 1080px;
+    position: relative;
+}
+.header_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 72px;
+    padding-bottom: 152px;
+}
+.header_item {
+    display: inline-block;
+    margin-right: 52px;
+}
+.header_item_link,
+.header_phone {
+    font-family: $family_condensed_regular;
+    font-weight: $main_weight_400;
+    font-size: $main_size_24;
+    color: $main_color_black;
+}
+.header_item_link:hover,
+.header_phone:hover {
+    text-decoration: underline;
+}
+.header_contact {
+    display: flex;
+    align-items: center;
+}
+.header_phone {
+    margin-left: 10px;
+}
+.header_cap {
+    text-align: center;
+    font-family: $family_balqis;
+    font-weight: $main_weight_400;
+    font-size: $main_size_250;
+    line-height: $main_height_334;
+}
+.header_cap_sec {
+    font-family: $family_condensed_light_italic;
+    font-style: italic;
+    font-size: $main_size_60;
+    font-weight: $main_weight_500;
+    position: absolute;
+    top: 540px;
+    right: 90px;
+}
+
+.about {
+    background-color: $main_color_white;
+}
+.about_container {
+    padding-top: 200px;
+    position: relative;
+}
+.about_cap {
+    @include main_cap();
+    margin-bottom: 107px;
+}
+.about_cap_sec {
+    @include main_cap_sec();
+    top: 300px;
+    left: 180px;
+}
+.about_main {
+    display: flex;
+    justify-content: space-between;
+}
+.about_slider {
+    width: 50%;
+    height: 700px;
+    margin-right: 55px;
+}
+.about_slider_pic {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+.about_des {
+    width: 50%;
+}
+.about_des_text {
+    width: 545px;
+    margin-bottom: 50px;
+}
+.about_des_text:first-child {
+    margin-top: 40px;
+}
+.about_des_text:last-child {
+    margin-bottom: 0;
+}
+.about_des_text_cap {
+    font-weight: $main_weight_600;
+}
+
+.trip {
+    background-color: $main_color_white;
+}
+.trip_container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.trip_main {
+    width: 50%;
+    position: relative;
+}
+.trip_wrapper {
+    position: absolute;
+    top: 0;
+    right: 320px;
+}
+.trip_cap {
+    @include main_cap();
+    margin-bottom: 108px;
+}
+.trip_cap_sec {
+    @include main_cap_sec();
+    top: 104px;
+    left: 242px;
+}
+.trip_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 862px;
+}
+.trip_schedule_item {
+    margin-bottom: 50px;
+}
+.trip_schedule_item:last-child {
+    margin-bottom: 0;
+}
+.trip_schedule_item_cap {
+    font-family: $family_condensed_regular;
+    font-weight: $main_weight_600;
+    font-size: $main_size_24;
+    line-height: $main_height_28;
+    margin-bottom: 20px;
+}
+.trip_schedule_item_item {
+    font-size: $main_size_24;
+    line-height: $main_height_28;
+}
+.trip_but {
+    width: 280px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $main_color_cap;
+    text-transform: uppercase;
+    font-family: $family_condensed_light;
+    font-weight: $main_weight_300;
+    font-size: $main_size_24;
+    line-height: $main_height_28;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.trip_but:hover {
+    color: $main_color_white;
+    background-color: rgba(226, 171, 63, 0.5);
+}
+.trip_slider {
+    width: 50%;
+    height: 1095px;
+}
+.trip_slider_pic {
+    width: 100%;
+    height: 1095px;
+    object-fit: cover;
+}
+
+.hotel_container {
+    padding-top: 200px;
+    position: relative;
+}
+.hotel_cap {
+    @include main_cap();
+    margin-bottom: 130px;
+}
+.hotel_cap_sec {
+    @include main_cap_sec();
+    top: 295px;
+    left: 120px;
+}
+.hotel_main {
+    display: flex;
+    justify-content: space-between;
+}
+.hotel_main_pic {
+    margin-right: 100px;
+    width: 500px;
+    height: 700px;
+}
+.hotel_des {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 700px;
+}
+.hotel_des_text {
+    margin-bottom: 20px;
+}
+.hotel_des_text:last-child {
+    margin-bottom: 0;
+}
+.hotel_des_col_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 40px;
+}
+.hotel_des_pic {
+    width: 280px;
+    height: 150px;
+}
+
+.price_container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    background: url(../pictures/prise_lg.svg) no-repeat top 335px right 0;
+}
+.price_cap {
+    @include main_cap();
+    margin-bottom: 130px;
+}
+.price_cap_sec {
+    @include main_cap_sec();
+    top: 295px;
+    left: 120px;
+}
+.price_terms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    background: url(../pictures/prise_md.svg) no-repeat top 48px right 215px,
+                url(../pictures/prise_md.svg) no-repeat top 216px right 140px;
+}
+.price_inc {
+    width: 530px;
+}
+.price_inc_cap,
+.price_not_inc_cap {
+    margin-bottom: 50px;
+    font-family: $family_condensed_regular;
+    font-weight: $main_weight_400;
+    font-size: $main_size_24;
+    line-height: $main_height_28;
+}
+.price_inc_item,
+.price_not_inc_item {
+    margin-bottom: 20px;
+}
+.price_inc_item:last-child,
+.price_not_inc_item:last-child {
+    margin-bottom: 0;
+}
+.price_not_inc {
+    width: 602px;
+}
+.price_request {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.price_request_main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price_request_date {
+    @include main_cap();
+    line-height: 69px;
+    margin-top: 105px;
+    margin-bottom: 52px;
+    margin-right: 110px;
+}
+.price_request_date_des {
+    @include main_cap_sec();
+    top: 175px;
+    left: 240px;
+}
+.price_request_pricing {
+    @include main_cap();
+    line-height: 69px;
+    margin-bottom: 128px;
+}
+.price_request_pricing_des {
+    @include main_cap_sec();
+    top: 300px;
+    left: 347px;
+}
+.price_request_form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+}
+.price_request_form_cap {
+    font-family: $family_condensed_regular;
+    font-weight: $main_weight_400;
+    font-size: $main_size_24;
+    line-height: $main_height_28;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.price_request_form_name,
+.price_request_form_phone {
+    width: 383px;
+    height: 50px;
+    border: 1px solid $main_color_cap;
+    padding: 0 31px;
+    margin-bottom: 20px;
+    font-family: $family_condensed_light;
+    font-size: $main_size_18;
+    font-weight: $main_weight_300;
+    line-height: $main_height_21;
+    color: $main_color_black;
+}
+.price_request_form_name::placeholder,
+.price_request_form_phone::placeholder {
+    color: $main_color_black;
+}
+.price_request_form_but {
+    width: 280px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $main_color_cap;
+    text-transform: uppercase;
+    font-family: $family_condensed_light;
+    font-weight: $main_weight_300;
+    font-size: $main_size_24;
+    line-height: $main_height_28;
+    color: $main_color_black;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.price_request_form_but:hover {
+    color: $main_color_white;
+    background-color: rgba(226, 171, 63, 0.5);
+}
+.price_request_pic {
+    width: 50%;
+    height: 800px;
+}
+
+.footer {
+    background: url(../pictures/footer_back.jpg) center no-repeat;
+    background-size: cover;
+}
+.footer_container {
+    min-height: 1180px;
+    padding-top: 96px;
+    display: flex;
+    align-items: flex-start;
+}
+.footer_contacts {
+    width: 356px;
+    min-height: 527px;
+    background: url(../pictures/footer_ballon.svg) no-repeat center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_contacts_cap {
+    font-family: $family_balqis;
+    font-weight: $main_weight_400;
+    font-size: $main_size_87;
+    line-height: 95px;
+    color: $main_color_cap;
+    margin-top: 71px;
+    margin-bottom: 46px;
+}
+.footer_phone,
+.footer_email {
+    display: flex;
+    align-items: center;
+}
+.footer_phone {
+    margin-bottom: 11px;
+}
+.footer_phone_link,
+.footer_email_link {
+    margin-left: 10px;
+    color: $main_color_black;
+}
+.footer_phone_link:hover,
+.footer_email_link:hover {
+    text-decoration: underline;
+}
+.footer_email {
+    margin-bottom: 33px;
+}
+.footer_youtube,
+.footer_face {
+    margin-right: 15px;
+}
+.footer_youtube svg path,
+.footer_face svg path,
+.footer_inst svg  path{
+    transition: fill 0.3s;
+}
+.footer_youtube:hover svg path,
+.footer_face:hover svg path,
+.footer_inst:hover svg  path {
+    fill: $main_color_grey;
+}
+.footer_text {
+    font-family: $family_balqis;
+    font-weight: $main_weight_400;
+    font-size: $main_size_87;
+    line-height: $main_height_114;
+    margin-top: 215px;
+    margin-left: 139px;
+}
+
+
+
+@import "blocks/1200.scss";
+@import "blocks/735.scss";
+
+
+@font-face {
+    font-family: "Balqis";
+    src: url(../fonts/Balqis.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto Condensed-Light";
+    src: url(../fonts/RobotoCondensed-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Roboto Condensed-LightItalic";
+    src: url(../fonts/RobotoCondensed-LightItalic.ttf);
+    font-style: italic;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
